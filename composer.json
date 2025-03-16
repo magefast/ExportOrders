@@ -1,0 +1,20 @@
+{
+  "name": "dragonfly/module-export-orders",
+  "version": "1.0.0",
+  "description": "Sample module for export Magento orders to 1C system by link in admin panel",
+  "type": "magento2-module",
+  "require": {
+    "magento/framework": "*"
+  },
+  "license": [
+    "Proprietary"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Dragonfly\\ExportOrders\\": ""
+    }
+  }
+}
