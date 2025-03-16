@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <listingToolbar name="listing_top">
+        <massaction name="listing_massaction" component="Magento_Sales/js/grid/tree-massactions">
+            <action name="sync_orders_1c">
+                <settings>
+                    <confirm>
+                        <message translate="true">Are you sure you want to Sync Orders to 1C?</message>
+                        <title translate="true">1C Sync</title>
+                    </confirm>
+                    <url path="expord/order/massSync"/>
+                    <type>sync_orders_1c</type>
+                    <label translate="true">Sync 1C</label>
+                </settings>
+            </action>
+        </massaction>
+    </listingToolbar>
+    <columns name="sales_order_columns">
+        <actionsColumn sortOrder="20" name="async" class="Dragonfly\ExportOrders\Ui\Component\Listing\Column\BlockActions">
+            <settings>
+                <indexField>entity_id</indexField>
+                <label translate="true">Sync</label>
+            </settings>
+        </actionsColumn>
+    </columns>
+</listing>
