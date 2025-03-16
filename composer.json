@@ -1,6 +1,6 @@
 {
   "name": "magefast-dragonfly/module-export-orders",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Sample module for export Magento orders to 1C system by link in admin panel",
   "type": "magento2-module",
   "require": {
