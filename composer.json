@@ -1,5 +1,5 @@
 {
-  "name": "dragonfly/module-export-orders",
+  "name": "magefast-dragonfly/module-export-orders",
   "version": "1.0.0",
   "description": "Sample module for export Magento orders to 1C system by link in admin panel",
   "type": "magento2-module",
